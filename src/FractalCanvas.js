@@ -61,10 +61,6 @@ class FractalCanvas extends Component {
       const pixel = point => cx.fillRect(point.x, point.y, 1, 1)
       const bigDot = point => cx.fillRect(point.x, point.y, 1, 1)
 
-      // const A = new Point(450, 190),
-      //   B = new Point(150, 710),
-      //   C = new Point(750, 710)
-
       const vertices = regularNGon(nvertices)
 
       vertices.forEach(point => bigDot(point))

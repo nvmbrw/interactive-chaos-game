@@ -18,17 +18,10 @@ class App extends Component {
     })
   }
 
-  // handleSubmit = evt => {
-  //   evt.preventDefault()
-  // }
   render() {
     return (
       <div>
-        <Ctrl
-          /*handleSubmit={this.handleSubmit}*/
-          handleChange={this.handleChange}
-          state={this.state}
-        />
+        <Ctrl handleChange={this.handleChange} state={this.state} />
         <FractalCanvas state={this.state} />
       </div>
     )
