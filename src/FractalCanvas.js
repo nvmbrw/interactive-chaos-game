@@ -66,7 +66,7 @@ class FractalCanvas extends Component {
       vertices.forEach(point => bigDot(point))
 
       const pickVertex = () =>
-        vertices[Math.round(Math.random() * (vertices.length - 1))]
+        vertices[Math.floor(Math.random() * vertices.length)]
 
       const getNewPoint = oldPoint => oldPoint.rTo(pickVertex(), rValue)
 
