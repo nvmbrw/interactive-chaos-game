@@ -30,6 +30,9 @@ const Ctrl = props => {
         name="iterations"
         max="500000"
       />
+      <a href="https://medium.com/@nnwilliams8/the-chaos-game-in-javascript-69af056c6ec">
+        what's this?
+      </a>
     </div>
   )
 }
